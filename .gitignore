@@ -1,4 +1,5 @@
 *.dbg
+*.zip
 lib/
 backup/
 Releases/

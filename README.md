@@ -29,3 +29,7 @@ enableDebugSharedMem=1
 Then just start Classic99 first and then Mirror99.exe
 
 Enjoy.
+
+
+
+[GitHub - SteveB69/Mirror99: Classic99 VDP Shared Memory Viewer](https://github.com/SteveB69/Mirror99)
