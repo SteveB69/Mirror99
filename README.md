@@ -15,3 +15,17 @@ This little program is viewer for the video-memory (VDP RAM) of the [Classic99 ]
  ![Screenshot](Mirror99.png)
 
 Please note, that some programs and cartridges use another memery layout.
+
+## Instructions
+
+You need to enable two features in the classic99.ini:
+
+```
+[debug]
+enableDebugger=1
+enableDebugSharedMem=1
+```
+
+Then just start Classic99 first and then Mirror99.exe
+
+Enjoy.
