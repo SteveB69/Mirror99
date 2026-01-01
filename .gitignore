@@ -1,0 +1,5 @@
+*.dbg
+lib/
+backup/
+Releases/
+

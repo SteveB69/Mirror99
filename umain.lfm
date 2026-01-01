@@ -1,0 +1,192 @@
+object Form1: TForm1
+  Left = 554
+  Height = 1091
+  Top = 164
+  Width = 1339
+  Caption = 'Mirror99 - Classic99 VDP Shared Memory Viewer'
+  ClientHeight = 1091
+  ClientWidth = 1339
+  DesignTimePPI = 144
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object scr: TMemo
+    Left = 40
+    Height = 592
+    Top = 24
+    Width = 792
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Name = 'Lucida Console'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Lines.Strings = (
+      '0'
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+      '9'
+      '10'
+      '11'
+      '12'
+      '13'
+      '14'
+      '15'
+      '16'
+      '17'
+      '18'
+      '19'
+      '20'
+      '21'
+      '22'
+      '23'
+    )
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Sprite: TStringGrid
+    Left = 870
+    Height = 942
+    Top = 24
+    Width = 442
+    ColCount = 9
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    RowCount = 29
+    TabOrder = 1
+    ColWidths = (
+      45
+      55
+      55
+      50
+      47
+      44
+      46
+      45
+      43
+    )
+    RowHeights = (
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+      32
+    )
+  end
+  object StaticText1: TStaticText
+    Left = 48
+    Height = 26
+    Top = 635
+    Width = 98
+    Caption = 'XB Charset'
+    TabOrder = 2
+  end
+  object StaticText2: TStaticText
+    Left = 488
+    Height = 26
+    Top = 635
+    Width = 194
+    Caption = 'XB256 Screen 2 Charset'
+    TabOrder = 3
+  end
+  object Memo1: TMemo
+    Left = 40
+    Height = 299
+    Top = 664
+    Width = 356
+    Lines.Strings = (
+      'Doubke-Click to load or '
+      'refresh XB Charset.'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 4
+    OnDblClick = Memo1DblClick
+  end
+  object Memo2: TMemo
+    Left = 472
+    Height = 299
+    Top = 664
+    Width = 356
+    Lines.Strings = (
+      'Doubke-Click to load or refresh'
+      'XB256 Charset (Screen 2)'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 5
+    OnDblClick = Memo2DblClick
+  end
+  object Crunchbuf: TEdit
+    Left = 112
+    Height = 33
+    Top = 988
+    Width = 1200
+    ReadOnly = True
+    TabOrder = 6
+  end
+  object StaticText3: TStaticText
+    Left = 40
+    Height = 26
+    Top = 992
+    Width = 66
+    Caption = 'Crunch'
+    TabOrder = 7
+  end
+  object StaticText4: TStaticText
+    Left = 40
+    Height = 26
+    Top = 1036
+    Width = 66
+    Caption = 'Redo'
+    TabOrder = 8
+  end
+  object redobuf: TEdit
+    Left = 112
+    Height = 33
+    Top = 1032
+    Width = 1200
+    ReadOnly = True
+    TabOrder = 9
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 736
+    Top = 56
+  end
+end
